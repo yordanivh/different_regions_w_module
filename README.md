@@ -29,13 +29,13 @@ This repo will help you get an understanding of how creating two resources in di
  * Clone this repository
  
  ```
- git clone https://github.com/yordanivh/two-regions
+ git clone https://github.com/yordanivh/different_regions_w_module
  ```
  
  * Change directory
  
  ```
- cd two-regions
+ cd different_regions_w_module
  ```
  
  * Initialize the project ( Terraform will download provider plugins)
@@ -96,7 +96,7 @@ This repo will help you get an understanding of how creating two resources in di
 # Sample output
 1. Run init to download the necessary plugins and initialize the module
 ```
-two-regions (master) $ terraform init
+different_regions_w_module (master) $ terraform init
 Initializing modules...
 
 Initializing the backend...
@@ -126,7 +126,7 @@ commands will detect it and remind you to do so if necessary.
 2.Run the plan to command to get and overview of what will be done
 
 ```
-two-regions (master) $ terraform plan
+different_regions_w_module (master) $ terraform plan
 Refreshing Terraform state in-memory prior to plan...
 The refreshed state will be used to calculate this plan, but will not be
 persisted to local or remote state storage.
@@ -282,7 +282,7 @@ can't guarantee that exactly these actions will be performed if
 ```
 3.Run apply to apply the plan
 ```
-two-regions (master) $ terraform apply
+different_regions_w_module (master) $ terraform apply
 
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:
@@ -451,7 +451,7 @@ deployed_server_west = us-west-1a
 4. Run destroy to remove the two instances to avoid any billing.
 
 ```
-two-regions (master) $ terraform destroy
+different_regions_w_module (master) $ terraform destroy
 module.module_east.aws_instance.server: Refreshing state... [id=i-04ffbc45f85decbd7]
 module.module_west.aws_instance.server: Refreshing state... [id=i-0f6aa11bbaba713f4]
 
